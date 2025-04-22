@@ -14,25 +14,21 @@ console.log(`Il numero scelto dalla CPU è ${numPC}`)
 const sommaTot = sumNum()
 
 function sumNum() {
-    const sum = numGC + numPC;
-    return sum;
+   const sum = numGC + numPC;
+   if (sum % 2 === 0) {
+    console.log(`La somma dei numeri è ${sum}, numero pari`)
+    } else {
+    console.log(`La somma dei numeri è ${sum}, numero dispari`)
+    }
+    return sum
 }
 
-// console.log(`La somma dei numeri è ${sumNum()}`)
+console.log(sommaTot)
 
-// if (sumNum() % 2 !== 0) {
-//     console.log(`Il numero è dispari`)
-// } else {
-//     console.log(`Il numero è pari`)
-// }
-
-// let pari = true;
-
-
-if (sceltaPOD === `pari` && sumNum() % 2 === 0) {
-    console.log("Hai vinto, il numero è pari") 
-}   else if (sceltaPOD === `dispari` && sumNum() % 2 !== 0) {
+if (sceltaPOD === 0 && sommaTot % 2 === 0) {
+     console.log("Hai vinto, il numero è pari") 
+}   else if (sceltaPOD === 0 && sommaTot % 2 !== 0) {
     console.log("Hai vinto, il numero è dispari")
 } else {
-    console.log(`Hai perso, il numero è ${sceltaPOD}`)
+    console.log(`Hai perso, il numero non è ${sceltaPOD}`)
 }
