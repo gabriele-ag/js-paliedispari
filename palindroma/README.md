@@ -18,7 +18,7 @@ Domande da  farsi quando si crea una funzione:
 
 Palindroma
 
-
+1. Chiedere all'utente la parola
 
 
 

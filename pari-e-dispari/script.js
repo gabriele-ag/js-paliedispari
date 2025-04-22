@@ -49,7 +49,7 @@ if (sceltaPOD !== `pari` && sceltaPOD !== `dispari`) {
     if ((risultato && sceltaPOD === 'pari') || (!risultato && sceltaPOD === 'dispari')) {
         console.log("Hai vinto") }
         else {
-            console.log("Hai perso")
+        console.log("Hai perso")
         }
 
     
